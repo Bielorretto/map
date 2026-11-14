@@ -102,3 +102,22 @@ s'affiche en bas de la réponse avec leurs liens.
 Configuration : `cp .env.example .env`, renseigner `OPENAI_API_KEY` (ou `ANTHROPIC_API_KEY`),
 relancer le serveur. La clé reste côté serveur, dans `.env` (ignoré par git). Modèle et effort
 de raisonnement se règlent avec `ASSISTANT_MODELE` et `ASSISTANT_EFFORT`.
+
+## Travailler à plusieurs
+
+`main` est protégée : personne ne pousse directement dessus. Chacun travaille sur sa branche,
+puis propose ses changements par une Pull Request, fusionnée après approbation de @Bielorretto
+(voir `.github/CODEOWNERS`).
+
+```sh
+git switch main && git pull               # partir de la dernière version
+git switch -c prenom/ma-modification     # sa propre branche
+# … modifications, puis :
+git add -A && git commit -m "Ce que fait la modification"
+git push -u origin prenom/ma-modification
+```
+
+Ensuite, sur GitHub : **Compare & pull request** → vers `main`. Si `main` a bougé entre-temps :
+`git switch main && git pull && git switch prenom/ma-modification && git merge main`.
+
+Rappels : ne jamais versionner `.env` (clé API) ni `data/` (reconstruit par `./pipeline/run_all.sh`).
