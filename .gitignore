@@ -1,0 +1,10 @@
+data/raw/
+data/build/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+*.log
+# secrets : clé OpenAI / Anthropic (voir .env.example)
+.env

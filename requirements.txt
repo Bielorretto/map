@@ -1,0 +1,12 @@
+numpy
+scipy>=1.11
+pandas
+pyarrow
+pyproj
+shapely>=2
+osmium
+numba
+fastapi
+uvicorn[standard]
+anthropic>=2.8
+openai>=3.51
