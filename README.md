@@ -15,6 +15,23 @@ Et une réponse chiffrée à la question : où un nouvel hôpital comptera-t-il 
 
 </div>
 
+> [!IMPORTANT]
+> **Une brique pour le projet Ju.N.I.Or**
+>
+> Nous avons contribué à la conception d'une brique qui pourrait être utilisée dans le
+> projet **Ju.N.I.Or** (*Jumeau Numérique d'Impact sur l'Organisation des soins*), projet
+> soutenu par Mme la ministre **Stéphanie Rist**.
+>
+> Ju.N.I.Or est l'un des chantiers de la
+> [Stratégie intelligence artificielle et données de santé 2025-2028](https://health-data-hub.fr/sites/default/files/2025-12/strategie_donnees_de_sante_ia-2_0.pdf)
+> du ministère de la Santé : un outil national de modélisation de l'organisation des soins,
+> copiloté par la DGOS et l'Agence de l'innovation en santé et développé par Inria. Son but
+> est d'appuyer la décision publique, nationale et territoriale, avec des données factuelles.
+>
+> Accès Urgences fait exactement cela pour l'accès aux urgences : il mesure, sur le vrai
+> réseau routier, l'effet d'une ouverture, d'une fermeture ou d'un regroupement de service
+> **avant** que la décision soit prise.
+
 ---
 
 ## Pourquoi cet outil
